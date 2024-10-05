@@ -1,4 +1,4 @@
-﻿namespace Pogoda
+namespace Pogoda
 {
     partial class Form1
     {
@@ -28,43 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             button1 = new Button();
-            richTextBox1 = new RichTextBox();
+            refreshTimer = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 20F);
             button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(263, 48);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Check Weather";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // richTextBox1
+            // refreshTimer
             // 
-            richTextBox1.Location = new Point(12, 41);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(776, 397);
-            richTextBox1.TabIndex = 1;
-            richTextBox1.Text = "";
+            refreshTimer.Enabled = true;
+            refreshTimer.Interval = 900000;
+            refreshTimer.Tick += refreshTimer_Tick;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.Location = new Point(12, 63);
+            label1.Name = "label1";
+            label1.Size = new Size(227, 37);
+            label1.TabIndex = 2;
+            label1.Text = "Temperature: __°C";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 20F);
+            label2.Location = new Point(12, 100);
+            label2.Name = "label2";
+            label2.Size = new Size(183, 37);
+            label2.TabIndex = 3;
+            label2.Text = "Humidity: __%";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 20F);
+            label3.Location = new Point(12, 174);
+            label3.Name = "label3";
+            label3.Size = new Size(251, 37);
+            label3.TabIndex = 4;
+            label3.Text = "Summary: __________";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 20F);
+            label4.Location = new Point(12, 137);
+            label4.Name = "label4";
+            label4.Size = new Size(263, 37);
+            label4.TabIndex = 5;
+            label4.Text = "Last api refresh: _____";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(richTextBox1);
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(286, 236);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(button1);
+            MaximizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Weather Checker 2000";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
-        private RichTextBox richTextBox1;
+        private System.Windows.Forms.Timer refreshTimer;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }

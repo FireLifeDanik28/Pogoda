@@ -142,11 +142,14 @@ namespace Pogoda
                         case 95:
                             summary = "Thunderstorm";
                             break;
-                        case 96: case 99:
-                            summary = "Thunderstorm with slight and heavy hail";
+                        case 96:
+                            summary = "Thunderstorm with slight hail";
+                            break;
+                        case 99:
+                            summary = "Thunderstorm with heavy hail";
                             break;
                         default:
-                            summary = "End of the World";
+                            summary = "The fog is coming";
                             break;
                     }
                     label1.Text = $"Temperature: {weatherForecast.current.temperature_2m}°C";
@@ -157,10 +160,10 @@ namespace Pogoda
                 }
                 else
                 {
-                    label1.Text = "Error 404";
-                    label2.Text = "Error 404";
-                    label3.Text = "Error 404";
-                    label4.Text = "Error 404";
+                    label4.Text = "THE";
+                    label1.Text = "FOG";
+                    label2.Text = "IS";
+                    label3.Text = "                   COMING";
                 }
             }
         }

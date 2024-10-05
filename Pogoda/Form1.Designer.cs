@@ -42,7 +42,7 @@ namespace Pogoda
             button1.Font = new Font("Segoe UI", 20F);
             button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(263, 48);
+            button1.Size = new Size(128, 111);
             button1.TabIndex = 0;
             button1.Text = "Check Weather";
             button1.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@ namespace Pogoda
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F);
-            label1.Location = new Point(12, 63);
+            label1.Location = new Point(146, 49);
             label1.Name = "label1";
             label1.Size = new Size(227, 37);
             label1.TabIndex = 2;
@@ -68,7 +68,7 @@ namespace Pogoda
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20F);
-            label2.Location = new Point(12, 100);
+            label2.Location = new Point(146, 86);
             label2.Name = "label2";
             label2.Size = new Size(183, 37);
             label2.TabIndex = 3;
@@ -78,17 +78,17 @@ namespace Pogoda
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20F);
-            label3.Location = new Point(12, 174);
+            label3.Location = new Point(12, 123);
             label3.Name = "label3";
-            label3.Size = new Size(251, 37);
+            label3.Size = new Size(416, 37);
             label3.TabIndex = 4;
-            label3.Text = "Summary: __________";
+            label3.Text = "Summary: _________________________";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 20F);
-            label4.Location = new Point(12, 137);
+            label4.Location = new Point(146, 12);
             label4.Name = "label4";
             label4.Size = new Size(263, 37);
             label4.TabIndex = 5;
@@ -97,7 +97,7 @@ namespace Pogoda
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(286, 236);
+            ClientSize = new Size(431, 172);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);

@@ -149,7 +149,7 @@ namespace Pogoda
                             summary = "End of the World";
                             break;
                     }
-                    label1.Text = $"Temperature: {weatherForecast.current.temperature_2m}�C";
+                    label1.Text = $"Temperature: {weatherForecast.current.temperature_2m}°C";
                     label2.Text = $"Humidity: {weatherForecast.current.relative_humidity_2m}%";
                     label3.Text = $"Summary: {summary}";
                     label4.Text = $"Last api refresh: {apiTime}";
